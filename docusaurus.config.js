@@ -7,7 +7,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const config = {
   title: '雙龍體育',
   tagline: '​雙龍職籃 ... 籃球，為一種由兩隊參與，在一個長方形籃球場進行的球類運動。每隊出場5名隊員，可將球向任何方向傳、投、拍、滾或運，目的是將籃球投入對方球籃得分，並阻止',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://www.ssangyongsports.eu.org/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -15,8 +15,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ssangyongsports', // Usually your GitHub org/user name.
+  projectName: 'github-k8klqk', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -35,15 +35,12 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
+
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Remove this to remove the "edit this page" links.         
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -56,17 +53,12 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'M雙龍體育 Logo',
-          src: 'https://www.ssangyongsports.eu.org/images/logo2.png',
+          alt: '雙龍體育 Logo',
+          src: 'https://img.ssangyongsports.eu.org/logo2.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
           {to: '/blog', label: 'Blog', position: 'left'},
+
           {
             href: 'https://slbtw.cf/',
             label: '雙龍職棒',
@@ -104,8 +96,28 @@ const config = {
           },
         ],
       },
+          announcementBar: {
+      id: 'announcementBar-2',
+      content:
+        '新網站已正式發布,反饋 <a target="_blank" rel="noopener noreferrer" href="https://discuss.ssangyongsports.eu.org/threads/%E6%96%B0%E7%B6%B2%E7%AB%99%E6%B8%AC%E8%A9%A6%E4%B8%AD.20/">連結',
+      backgroundColor: '#84C1FF',
+      textColor: '#091E42',
+      isCloseable: false,
+    },
+            algolia: {
+      apiKey: "7640fd8ca3b8204bd58b654f71607ab5",
+      indexName: "docs",
+      appId: "8YELX4XDEG",
+      // Optional: see doc section bellow
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
           title: '體育',
